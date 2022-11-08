@@ -766,11 +766,7 @@
             dummy.select();
             document.execCommand("copy");
             document.body.removeChild(dummy);
-            document.ready(function() {
-                window.triggerAlert = function (){
-                    alert("Link to this position was copied to your clipboard!");
-                }
-            });
+            alert("A link to this spot was copied to your clipboard");
         }
     </script>
 </body>
