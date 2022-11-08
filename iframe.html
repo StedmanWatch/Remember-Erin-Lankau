@@ -32,7 +32,7 @@
             top: 0;
             left: 0;
             display: block;
-            width: 580px;
+            width: 600px;
             cursor: pointer;
             margin: 0;
             padding: 0;
@@ -43,11 +43,9 @@
             left: 0;
             text-align: center;
             vertical-align: middle;
-            font-size: 20px;
             font-weight: bold;
-            width: 580px;
+            width: 600px;
             height: 0;
-            cursor: pointer;
             background-color: white;
             margin: 0;
             padding: 0;
@@ -59,8 +57,9 @@
             margin-bottom:10px;
             margin-right:10px;
             color: white;
-            border-radius: 2rem;
-            padding: 0.7rem 1.5rem 0.8rem 1.5rem;
+            border-radius: 1.4rem;
+            padding: 0.5rem 1.4rem 0.7rem 1.4rem;
+            font-size: 20px;
             font-weight: 700;
             cursor: pointer;
         }
@@ -85,16 +84,14 @@
             display: flex;
             flex-direction: column;
             background-color: white;
-            width: 580px;
+            width: 600px;
             padding-top: 10px;
-            border-top: 2px solid #eff3f4;
         }
 
         .context {
             padding-left: 20px;
             padding-right: 20px;
             padding-bottom: 10px;
-            */
         }
 
         .context>p {
@@ -124,13 +121,13 @@
         }
 
         .context-footer {
-            width: 580px;
+            width: 600px;
             margin-top: 20px;
             height: 0;
             border-bottom: 2px solid #eff3f4;
         }
 
-        @media only screen and (max-width: 580px) {
+        @media only screen and (max-width: 600px) {
 
             .img {
                 width: 100%;
@@ -143,8 +140,8 @@
             .bubble {
                 font-size: 4vw;
                 font-size: max(10px, 3.7vw);
-                border-radius: 2rem;
-                padding: 0.7em 1.5em 0.8em 1.5em;
+                border-radius: 1.4em;
+                padding: 0.5em 1.4em 0.7em 1.4em;
                 font-weight: 700;
                 cursor: pointer;
             }
@@ -155,7 +152,7 @@
                 background-color: white;
                 width: 100%;
                 padding-top: 2vw;
-                border-top: 2px solid #eff3f4;
+                /*border-top: 2px solid #eff3f4;*/
             }
 
             .context {
@@ -199,12 +196,14 @@
 
 <body>
     <script>
+        /*
         function isIndexLoad() {
             if (top.location.href.match('iframe')) {
                 top.location.href = 'https://stedmanwatch.github.io/Remember-Erin-Lankau';
             }
         }
         isIndexLoad();
+        */
     </script>
     <script type="text/javascript">
         (function (window, document, dataLayerName, id) {
@@ -236,7 +235,7 @@
             <img class="img" onclick="show(this)"
                 src="https://raw.githubusercontent.com/StedmanWatch/Remember-Erin-Lankau/main/images/2018-02-09-04-40.png" />
             <div class="options" id="options">
-                <div class="bubble posBtn" onclick="hideLink(this)">Link to this spot</div>
+                <div class="bubble posBtn" onclick="hideLink(this)">Link to tweet</div>
                 <div class="bubble twitter" onclick="hideOpen(this)" id="https://twitter.com/ScottMStedman/status/961807024596992000">Open tweet</div>
             </div>
         </div>
