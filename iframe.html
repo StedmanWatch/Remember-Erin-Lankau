@@ -766,12 +766,11 @@
             dummy.select();
             document.execCommand("copy");
             document.body.removeChild(dummy);
-            document.ready(function() {
-                window.triggerAlert = function triggerAlert(){
+            document).ready(function() {
+                window.triggerAlert = function (){
                     alert('iFrame button has been clicked');
-                };
+                }
             });
-            alert("A link to this spot was copied to your clipboard");
         }
     </script>
 </body>
