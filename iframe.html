@@ -57,52 +57,28 @@
             display: inline-block;
             margin-top:10px;
             margin-bottom:10px;
-            margin-right:20px;
+            margin-right:10px;
+            color: white;
+            border-radius: 2rem;
+            padding: 0.7rem 1.5rem 0.8rem 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .bubble.posBtn {
             background-color: #39C999;
-            color: white;
-            border-radius: 2rem;
-            padding: 0.7rem 1.5rem 0.8rem 1.5rem;
-            font-weight: 700;
-            cursor: pointer;
         }
 
-        .bubble-twitter {
-            display: inline-block;
-            margin-top:10px;
-            margin-bottom:10px;
-            margin-right:20px;
+        .bubble.twitter {
             background-color: #1d9bf0;
-            color: white;
-            border-radius: 2rem;
-            padding: 0.7rem 1.5rem 0.8rem 1.5rem;
-            font-weight: 700;
-            cursor: pointer;
         }
 
-        .bubble-wayback {
-            display: inline-block;
-            margin-top:10px;
-            margin-bottom:10px;
-            margin-right:20px;
+        .bubble.wayback {
             background-color: #000000;
-            color: white;
-            border-radius: 2rem;
-            padding: 0.7rem 1.5rem 0.8rem 1.5rem;
-            font-weight: 700;
-            cursor: pointer;
         }
 
-        .bubble-reddit {
-            display: inline-block;
-            margin-top:10px;
-            margin-bottom:10px;
-            margin-right:20px;
+        .bubble.reddit {
             background-color: #ff4500;
-            color: white;
-            border-radius: 2rem;
-            padding: 0.7rem 1.5rem 0.8rem 1.5rem;
-            font-weight: 700;
-            cursor: pointer;
         }
 
         .context-box {
@@ -166,7 +142,7 @@
 
             .bubble {
                 font-size: 4vw;
-                font-size: max(10px, 3vw);
+                font-size: max(10px, 3.7vw);
                 border-radius: 2rem;
                 padding: 0.7em 1.5em 0.8em 1.5em;
                 font-weight: 700;
@@ -260,8 +236,8 @@
             <img class="img" onclick="show(this)"
                 src="https://raw.githubusercontent.com/StedmanWatch/Remember-Erin-Lankau/main/images/2018-02-09-04-40.png" />
             <div class="options" id="options">
-                <div class="bubble" onclick="hideLink(this)">Link to this spot</div>
-                <div class="bubble-twitter" onclick="hideOpen(this)" id="https://twitter.com/ScottMStedman/status/961807024596992000">Open tweet</div>
+                <div class="bubble posBtn" onclick="hideLink(this)">Link to this spot</div>
+                <div class="bubble twitter" onclick="hideOpen(this)" id="https://twitter.com/ScottMStedman/status/961807024596992000">Open tweet</div>
             </div>
         </div>
         <div class="content-item" id="2018-02-09-21-23">
